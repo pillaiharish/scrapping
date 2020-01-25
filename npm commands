@@ -1,0 +1,58 @@
+$ npm config set registry https://registry.your-registry.npme.io/  // replacing “your-registry” with the name of your company’s npm Enterprise registry
+
+$ npm i npmrc -g //If you need to publish and install packages to and from different registries – for example, an npm Enterprise registry for work-related code, and the npmjs.com public registry for open source projects – you can create and manage a separate npm user profile for each registry using the npmrc tool.
+
+$ npmrc -c work  //To create an npm Enterprise profile to create a profile called “work”
+
+$ npmrc profile-name //To switch profiles, on the command line replacing profile-name with the name of your profile
+
+$ npm config set proxy http://username:password@host:port
+$ npm config set https-proxy http://username:password@host:port
+
+Or you can edit directly your ~/.npmrc file:
+
+proxy=http://username:password@host:port
+https-proxy=http://username:password@host:port
+https_proxy=http://username:password@host:port
+
+$ npm config set strict-ssl false //
+
+$ npm config edit //
+
+$ which node
+
+$ node --version
+
+$ npm --version
+
+$ node
+
+$ which npm
+
+$ npm --version
+
+$ cat .npmrc
+
+$ npm init  //creates package.json
+or
+$ npm init --y
+
+$ npm list
+
+$ npm run audit //identify multiple vulnerabilities
+
+$ npm audit fix //fixing dependencies
+
+$ npm i <package> //install local package
+
+$ npm i -g </package><package> //install global package
+
+$ npm un </package><package> //uninstall local package
+
+$ npm up //npm update packages
+
+$ npm t //run tests
+
+$ npm ls //list installed modules
+
+$ npm ll or npm la //print additional package information while listing modules
